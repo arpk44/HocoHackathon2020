@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coronavirus Help</title>
+	<link rel="stylesheet" href="WebPage.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="webpage.js"></script>
+	<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<ul>
+  <li><a href="#square">Home</a></li>
+  <li><a href="#square1">COVID-19</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">News</a>
+    <div class="dropdown-content">
+      <a href="#HOCO-news">Cases Chart</a>
+      <a href="#news">Today's News</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Testing</a>
+    <div class="dropdown-content">
+      <a href="#google-map-code">Locations</a>
+      <a href="#website-info">Testing Information</a>
+    </div>
+  </li>
+  <li>
+  	<a href="#website-info">Information</a>
+  </li>
+  <li>
+  	<a href="#free-food-centers">Meals</a>
+  </li>
+</ul>
+
+</head>
+<body>
+	<br>
+<div class="square">
+	<div id="intro">
+		<h1><u>COVID-19 Help</u></h1>
+	</div>
+</div>
+<br>
+<div class="square1">
+	<div id="pandemic-info">
+		<h2><u>What is the COVID-19 Pandemic?</u></h2>
+		<p>As COVID-19 continues to spread across the country and the world, we all must remain vigilant. The changes we have had to make to routines and daily life are extremely hard, but these changes are even more important now and in the future. We must stop the spread of this new and dangerous virus. The more steps you and your family can take to prevent the spread of COVID-19, the safer you will be.</p>
+		<p><b>If you have any questions, please visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/your-health/need-to-know.html">CDC.gov</a></b></p>
+
+		<h2><u>Symptoms and Prevention</u></h2>
+		<p><b>Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:</b><br><br>
+1. Fever or chills <br>
+2. Cough <br>
+3. Shortness of breath or difficulty breathing<br>
+4. Fatigue<br>
+5. Muscle or body aches<br>
+6. Headache<br>
+7. New loss of taste or smell<br>
+8. Sore throat<br>
+9. Congestion or runny nose<br>
+10. Nausea or vomiting<br>
+11. Diarrhea<br><br>
+<b>Look for emergency warning signs for COVID-19. If someone is showing any of these signs, seek emergency medical care immediately:</b><br><br>
+1. Trouble breathing<br>
+2. Persistent pain or pressure in the chest<br>
+3. New confusion<br>
+4. Inability to wake or stay awake<br>
+5. Bluish lips or face<br>
+6. Call your medical provider for any other symptoms that are severe or concerning to you.</p>
+<br><h3>Prevention</h3>
+<br>
+<p>Wash your hands for 20 seconds with soap, use masks when going outside, try not traveling much, and don't be in a place with more than 50 people.</p>
+
+
+	</div>
+	<button class="button" onClick="alert('You should contact Maryland Services or go to the COVID-19 testing centers [below]. Or, call 911 if you are having the emergency medical signs.');">I have symptoms, what do I do?</button></div>
+</div>
+<br>
+<div class="square2">
+	<div id="testing-info">
+		<h2><u>Testing Information</u></h2>
+		<p>Since, COVID-19 is surging. These are some testing sites throughout Howard County.</p>
+		<div id="google-map-code">
+			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=17qDTZhpgiA2uqFzbsxOwmSp_e1VQEhFc" width="640" height="480"></iframe>
+			<p>Click on each map icon, to learn about the testing information, type of testing avaliable, and phone number information. Please remember to wear a mask when you go to these locations. <b>This map is created by Arpit Kesharwani</b></p>
+			<p><b>Closest Testing Center:</b> AllCare Family Medicine and Urgent Care of Ellicott City (9396 Baltimore National Pike, Ellicott City, MD 21042
++1 410-480-9110)</p>
+		</div>
+	</div>
+</div>
+<br>
+<div class="square3">
+	<div id="free-food-centers">
+		<h2><u>Meal Locations</u></h2>
+		<p>Meals are being served every school in <a href="https://www.hcpss.org/schools/#direct">Howard County</a> except in Burleigh Manor Middle School and Hammond High School.</p>
+		<p>Last updated 3:42 pm, Saturday, 21st Nov., 2020</p>
+	</div>
+</div>
+<br>
+<div class="square4">
+	<br>
+	<div id="HOCO-news">
+		<h2><u>Howard County COVID-19 News</u></h2>
+		<h3><u>Howard County Schools Information</u></h3>
+		<p>Howard County Public Schools have been closed till <b>April 14, 2021</b></p>
+		<h3><u>COVID-19 Cases in HoCo</u></h3>
+		<i>Last Updated: 4:30pm, 21st November, 2020;  This will be updated daily.</i>
+		<br>
+		<br>
+		<button class="button button5" onClick="window.location.reload();">Click to Refresh</button>
+<br><br>
+		<table style="border-collapse: collapse; width: 100%; height: 145px;" border="1">
+		<tbody>
+		<tr style="height: 29px;">
+		<td style="width: 25%; height: 29px;"><strong>Place</strong></td>
+		<td style="width: 25%; height: 29px;"><strong>COVID-19 Cases</strong></td>
+		<td style="width: 25%; height: 29px;"><strong>COVID-19 Recoveries</strong></td>
+		<td style="width: 25%; height: 29px;"><strong>COVID-19 Deaths</strong></td>
+		</tr>
+		<tr style="height: 29px;">
+		<td style="width: 25%; height: 29px;">Howard County <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Flag_of_Howard_County%2C_Maryland.svg" alt="File:Flag of Howard County, Maryland.svg - Wikimedia Commons" width="23" height="17" /></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #0000ff;">7,207 (+100)</span></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #008000;">-</span></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #993300;">134 (+1)</span></td>
+		</tr>
+		<tr style="height: 29px;">
+		<td style="width: 25%; height: 29px;">Maryland <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/emojipedia/113/flag-for-maryland-usmd_1f3f4-e0075-e0073-e006d-e0064-e007f.png" alt="Flag for Maryland (US-MD) on Emojipedia 11.0" width="23" height="23" /></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #0000ff;">177K (+2,147)</span></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #008000;">-</span></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #993300;">4,398 (+27)</span></td>
+		</tr>
+		<tr style="height: 29px;">
+		<td style="width: 25%; height: 29px;">United States <span>🇺🇸</span></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #0000ff;">12M (+199K)</span></td>
+		<td class="text-success cc_cursor" style="width: 25%; height: 29px;"><span style="color: #008000;">7,391,346 (+85K)</span></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #993300;">261,626 (+1,947)</span></td>
+		</tr>
+		<tr style="height: 29px;">
+		<td style="width: 25%; height: 29px;">World 🌎</td>
+		<td style="width: 25%; height: 29px;"><span style="color: #0000ff;">55.6M</span></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #008000;">35.8M</span></td>
+		<td style="width: 25%; height: 29px;"><span style="color: #993300;">1.34M</span></td>
+		</tr>
+		</tbody>
+		</table>
+		<div id="NEWS">
+		<h3><u>Maryland Coronavirus Information Website</u></h3>
+		<iframe style="width:60%; height: 300px;" src="https://coronavirus.maryland.gov/">
+		</iframe>
+		<h3><u>Latest Articles and News</u></h3>
+		<i>Last Updated 5:00 PM, 21st Nov, 2020</i>
+		<br>
+		<br>
+		<div class="website-100">
+			<h4><a href="https://baltimore.cbslocal.com/2020/11/20/maryland-covid-19-cases-surge-as-new-restrictions-take-effect-and-businesses-fight-to-stay-afloat/">Surge Cases News: Baltimore CBS Local</a></h4>
+			<p>Maryland COVID-19 Cases Surge As New Restrictions Take Effect And 
+Businesses Fight To Stay Afloat</p>
+		</div>
+		<div class="website-100">
+			<h4><a href="https://wtop.com/maryland/2020/11/maryland-re-imposing-coronavirus-restrictions-at-5pm/">WTOP Maryland: Restrictions about COVID-19</a></h4>
+			<p>There are some new instructions by Govenor Lary Hogan.</p>
+		</div>
+		<div class="website-100">
+			<h4><a href="https://www.nbcwashington.com/news/local/coronavirus-in-dc-maryland-virginia-what-to-know-on-nov-21/2483638/">DC Metro Area News about COVID-19 Article</a></h4>
+			<p>Learn about DC Metro Area's COVID-19 restrictions.</p>
+		</div>
+		<p>These are updated every day. </p></div>
+	</div>
+	<br>
+</div>
+<br>
+<br>
+	<div id="website-info">
+		<h3>What is this website for?</h3>
+		<p>This website is created by <b>Arpit Kesharwani</b> to help you learn about the COVID-19 pandemic, find testing areas in Howard County and find upto date information and news about it in Howard County.</p>
+		<p>This website was created using HTML, JavaScript, CSS and JQuery. This website was created for the HocoHackathon!</p>
+	</div>
+
+</body>
+<footer>
+  <p>Created by Arpit Kesharwani.</p>
+</footer>
+</html>
+
